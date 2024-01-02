@@ -30,7 +30,7 @@ export default function Login() {
         }
         //axios query to get data from mongodb and validate credentials
         try{
-           await axios.post('http://localhost:3000/login', { email, password } )
+           await axios.post('http://localhost:80/login', { email, password } )
             console.log("User logged in");  
             setShow(false); 
             localStorage.setItem("loggedInUser", email); 
