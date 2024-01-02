@@ -27,7 +27,7 @@ export default function Deposit() {
           setTimeout(() => setWarning(""), 3000)
           return;
         }
-        const response = axios.post('http://localhost:3000/deposit', { accountNumber, deposit } );
+        const response = axios.post('http://localhost:80/deposit', { accountNumber, deposit } );
         console.log(response);
         setShow(false);
         return;    
