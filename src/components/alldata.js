@@ -9,7 +9,7 @@ export default function AllData() {
   useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:3000/all');
+          const response = await axios.get('http://localhost:80/all');
           setUser(response.data);
         } catch (error) {
           console.error('Error fetching data:', error);
