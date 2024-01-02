@@ -50,7 +50,7 @@ export default function CreateAccount() {
      
       //posting data to database using http request
      try{
-      axios.post('http://localhost:3000/create', {userName,email,password});
+      axios.post('http://localhost:80/create', {userName,email,password});
       setShow(false);
      }catch (error) {
         setWarning('Account already exists');
