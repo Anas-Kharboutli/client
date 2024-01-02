@@ -21,7 +21,7 @@ export default function Transfer() {
           setTimeout(() => setWarning(""), 3000)
           return;
         }
-        const response = axios.post('http://localhost:3000/transfer', { accountNumber, transfer } );
+        const response = axios.post('http://localhost:80/transfer', { accountNumber, transfer } );
         console.log(response);
         setShow(false);
         return;
