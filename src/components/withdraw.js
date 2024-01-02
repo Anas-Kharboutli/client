@@ -35,7 +35,7 @@ export default function Withdraw() {
         return;
       } 
       
-      const response = axios.post('http://localhost:3000/withdraw', { accountNumber, withdraw } );
+      const response = axios.post('http://localhost:80/withdraw', { accountNumber, withdraw } );
       console.log(response);
       setShow(false);
       return;
